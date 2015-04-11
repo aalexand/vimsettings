@@ -25,4 +25,10 @@ the `.vimsettings` file will be evaluated and the settings will be applied.
 There may be multiple `.vimsettings` files in the hierarchy, they are evaluated
 bottom up so that settings in the deeper files win.
 
+You can also do per file type settings with something like
+
+    if &filetype == 'cpp' || &filetype == 'python'
+      set sw=2 sts=4 ts=8 et
+    endif
+
 I think that's it.
