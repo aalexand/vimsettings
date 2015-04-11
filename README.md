@@ -23,7 +23,7 @@ different VIM settings for its files and put the settings into the file, e.g.
 When you open in VIM a file from this directory or any of its subdirectories,
 the `.vimsettings` file will be evaluated and the settings will be applied.
 There may be multiple `.vimsettings` files in the hierarchy, they are evaluated
-bottom up so that settings in the deeper files win.
+top-down so that settings in the deeper files win.
 
 You can also do per file type settings with something like
 
